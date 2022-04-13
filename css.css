@@ -24,6 +24,11 @@
     border-color: rgb(50, 82, 153);
 }
 
+.menu1:hover{
+    background-color: rgb(125, 154, 216);
+    transform: scale(1.5,1);
+}
+
 .cuerpo {
     display: flex;
     align-items: center;
@@ -35,10 +40,31 @@
     margin: 30px;
 }
 
+@keyframes animacion{
+    0%{
+        height: 400px; 
+        width: 500px;
+    }
+    25%{
+        opacity: 40%;
+    }
+    50%{
+        height: 600px;
+        width: 800px;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.rotar{
+animation: animacion 2s linear 1s 1;
+}
+
 .logo {
     padding: 10px;
     height: 500px;
     width: 600px;
+    
 }
 
 .grid {
@@ -75,6 +101,11 @@
     background-color: white;
     border-style: solid;
     border-color: rgb(50, 82, 153);
+}
+
+.footer1:hover{
+    background-color: rgb(125, 154, 216);
+    transform: scale(1.5,1);
 }
 
 
